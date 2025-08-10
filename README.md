@@ -41,18 +41,13 @@ Before running this application, make sure you have:
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
-cd finance-tracker
+git clone https://github.com/adityadinkarpatil684/personal-finance-tracker.git
+cd personal-finance-tracker
 ```
 
 ### 2. Database Setup
 
-1. **Clone the Repository**
-
-git clone https://github.com/adityadinkarpatil684/personal-finance-tracker.git
-cd personal-finance-tracker
-
-2. **Create the database and tables** by running the SQL script:
+1. **Create the database and tables** by running the SQL script:
 
 ```bash
 # Login to MySQL and run:
@@ -61,7 +56,7 @@ mysql -u root -p
 
 Then copy and paste the contents of `database_schema.sql` into your MySQL console.
 
-### 3. Backend Setup
+### 2. Backend Setup
 
 ```bash
 cd server
@@ -95,18 +90,18 @@ GEMINI_API_KEY=your API key
 
 ```bash
 # Start the server
-npm start
+npm start 
 ```
 
 The server will start on `http://localhost:5000`
 
-### 4. Frontend Setup
+### 3. Frontend Setup
 
 ```bash
 cd client
 
 # Install dependencies
-npm install
+npm install axios chart.js react react-chartjs-2 react-dom react-router-dom
 
 # Start the development server
 npm run dev
